@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <script>
+        let numero=[3,8,9,7,6]
+        let k=prompt('Informe número de rotações do Array: ');
+        rotacaoArray(numero,k)
+        alert(numero);
+
+        function rotacaoArray(numero,k){
+            return numero.unshift(...numero.splice(-k))
+        }
+    </script>
+</body>
+</html>
